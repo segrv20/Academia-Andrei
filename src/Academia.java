@@ -233,7 +233,7 @@ public class Academia extends JFrame{
                 valorFinal = valorBase;
 
                 valorFinal -= valorFinal * custo.getPromoDuracao();
-                
+
                 lblNewLabel_5.setText("Valor Final: R$ " + String.format("%.2f", valorFinal));
 // ado ado ado quem ler é viado;
 
