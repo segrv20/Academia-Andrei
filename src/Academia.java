@@ -225,44 +225,17 @@ public class Academia extends JFrame{
                 boolean Anual = rdbtnAnual.isSelected();
 
                 CustoTotal custo = new CustoTotal(Basico,Intermediario,Premium,TresXPS,CincoXPS,Semestral,Anual);
-                // Plano
-//                if (rdbtnBasico.isSelected()) {
-//                    valorBase = Planos.Basico.getValor();
-//                } else if (rdbtnIntermediario.isSelected()) {
-//                    valorBase = Planos.Intermediario.getValor();
-//                } else if (rdbtnPremium.isSelected()) {
-//                    valorBase = Planos.Premium.getValor();
-//                } else {
-//                    //JOptionPane.showMessageDialog(null, "Selecione um plano!");
-//                    return;
-//                }
+
                 valorBase = custo.getCustoPlano();
 
-
-                // Frequência
-//                if (rdbtnx3xPS.isSelected()) {
-//                    valorBase += valorBase * Frequencia.V3.getAcrecimo();
-//                } else if (rdbtn5xPS.isSelected()) {
-//                    valorBase += valorBase * Frequencia.V5.getAcrecimo();
-//                }
                 valorBase += valorBase * custo.getCustoFrequencia();
 
                 valorFinal = valorBase;
 
                 valorFinal -= valorFinal * custo.getPromoDuracao();
-
-                // Duração
-//                if (rdbtnSemestral.isSelected()) {
-//                    valorFinal -= valorFinal * Duracao.Semestral.getAcrecimo();
-//                } else if (rdbtnAnual.isSelected()) {
-//                    valorFinal -= valorFinal * Duracao.Anual.getAcrecimo();
-//                } else if (!rdbtnMensal.isSelected()) {
-//                    //JOptionPane.showMessageDialog(null, "Selecione a duração!");
-//                    return;
-//                }
-
+                
                 lblNewLabel_5.setText("Valor Final: R$ " + String.format("%.2f", valorFinal));
-
+// ado ado ado quem ler é viado;
 
             }
 
